@@ -15,64 +15,62 @@ namespace ObrasBibliograficas.Controllers
     public class AuthorController : ControllerBase
     {
         private AuthorStore _authorStore { get; set; }
-        private IRepository<Author> _authorRepository { get; set; }
+        private IRepository<Author> _repository { get; set; }
 
         public AuthorController(AuthorStore store, IRepository<Author> repository)
         {
-            _authorStore = store;
-            _authorRepository = repository;
+            _store = store;
+            _repository = repository;
         }
 
         [HttpGet()]
         public ActionResult Get()
         {
-            var authors = _authorRepository.GetAll();
-            var viewModel = authors.Select(a => new AuthorDTO
+            var authors = _repository.GetAll();
+            var data = authors.Select(a => new AuthorDTO
             {
                 Id = a.Id,
-                Name = (a.Name.IndexOf(" ") < 0)
-                        ? a.Name.ToUpper()
-                        : a.Name.ToAuthorName()
+                Name = (a.Name.IndexOf(" ") > 0) ? a.Name.ToAuthorName() : a.Name.ToUpper()
             });
 
-            return Ok(viewModel);
+            return Ok(data);
 
         }
 
 
 
-        [HttpGet("GetAuthor")]
+        [HttpGet("{id}")]
 
         public ActionResult GetAuthor(Guid id)
         {
-            Author author = _authorRepository.GetById(id);
+            Author author = _repository.GetById(id);
 
             if (author == null)
-                return BadRequest("Author invalid");
+                return BadRequest("Autor inválido");
 
             return Ok(new AuthorDTO
             {
                 Id = author.Id,
-                Name = (author.Name.IndexOf(" ") < 0) ? author.Name.ToUpper() : author.Name.ToAuthorName()
+                Name = (author.Name.IndexOf(" ") > 0) ? author.Name.ToAuthorName() : author.Name.ToUpper()
             });
 
         }
 
 
-        [HttpPost("CreateOrEdit")]
-        public async Task<ActionResult> CreateOrEdit(Author dto)
+        [HttpPost]
+        public async Task<ActionResult> CreateOrEdit(Author author)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) 
+                return BadRequest(ModelState);
 
             try
             {
-                _authorStore.Store(dto);
-                return Ok("Author Created");
+                _store.Store(dto);
+                return Ok("Autor cadastrado");
             }
-
             catch (Exception ex)
             {
-                return BadRequest("Couldn't create author");
+                return BadRequest("Não foi possível cadastrar o autor");
             }
         }
     }
