@@ -1,6 +1,4 @@
 PROJETO Obras Bibliográficas
-SWAGGER
-Interface SWAGGER para teste da API http://localhost:/swagger/
 
 Banco de dados - Utiliza SQL Server como base dados, ao rodar a migration do projeto a tabela em questão será criada no banco master. É necessário informar um Usuário e senha para conectar, dependendo da conexão da maquina que irá hospedar a aplicação.
 Para executar migrations é necessário estar no seguinte projeto: ObrasBibliograficas.Infra
