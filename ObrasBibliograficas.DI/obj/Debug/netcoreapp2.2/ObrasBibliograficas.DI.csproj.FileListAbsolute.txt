@@ -1,0 +1,14 @@
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\bin\Debug\netcoreapp2.2\ObrasBibliograficas.DI.deps.json
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\bin\Debug\netcoreapp2.2\ObrasBibliograficas.DI.dll
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\bin\Debug\netcoreapp2.2\ObrasBibliograficas.DI.pdb
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\obj\Debug\netcoreapp2.2\ObrasBibliograficas.DI.csprojAssemblyReference.cache
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\obj\Debug\netcoreapp2.2\ObrasBibliograficas.DI.csproj.CoreCompileInputs.cache
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\obj\Debug\netcoreapp2.2\ObrasBibliograficas.DI.AssemblyInfoInputs.cache
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\obj\Debug\netcoreapp2.2\ObrasBibliograficas.DI.AssemblyInfo.cs
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\obj\Debug\netcoreapp2.2\ObrasBibliograficas.DI.csproj.CopyComplete
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\obj\Debug\netcoreapp2.2\ObrasBibliograficas.DI.dll
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\obj\Debug\netcoreapp2.2\ObrasBibliograficas.DI.pdb
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\bin\Debug\netcoreapp2.2\ObrasBibliograficas.Domain.dll
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\bin\Debug\netcoreapp2.2\ObrasBibliograficas.Infra.dll
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\bin\Debug\netcoreapp2.2\ObrasBibliograficas.Domain.pdb
+C:\Users\alroc\source\repos\ObrasBibliograficas\ObrasBibliograficas.DI\bin\Debug\netcoreapp2.2\ObrasBibliograficas.Infra.pdb
